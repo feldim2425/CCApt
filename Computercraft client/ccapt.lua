@@ -2,7 +2,7 @@ local args = {...}
 local currentProg = shell.getRunningProgram():sub(shell.dir():len() + 2, -5 )
 local aptListDir = "/.ccapt/sources.list.d"
 local aptList = "/.ccapt/sources.list"
-local linkPattern = "http"
+local linkPattern = "^http"
 local parameters = { "install", "remove", "upgrade", "add-server", "remove-server" }
 
 local function capLine(line, width)
